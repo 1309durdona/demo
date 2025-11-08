@@ -1,8 +1,17 @@
 package idrok;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+
+@Component
 public class Subject {
     private String title;
+
+    @Autowired
     private Professor professor; // domla
+
+    @Autowired
     private Assistant assistant; // asistent
 
     public void setTitle(String title) { this.title = title; }
