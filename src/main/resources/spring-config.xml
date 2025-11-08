@@ -9,4 +9,9 @@
 
     <context:component-scan base-package="idrok"/>
 
+    <bean name="subject" class="idrok.Subject" autowire="byType">
+        <property name="title" value="Mathematics"/>
+    </bean>
+
+
 </beans>
